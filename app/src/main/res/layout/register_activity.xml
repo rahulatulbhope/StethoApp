@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="13"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Name:"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <EditText android:textColor="@android:color/black"
+
+                android:textSize="15dp"
+                android:id="@+id/namesignup"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Email ID:"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <EditText android:textColor="@android:color/black"
+
+                android:textSize="15dp"
+                android:id="@+id/emailsignup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="textEmailAddress" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Password:"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <EditText android:textColor="@android:color/black"
+
+                android:textSize="15dp"
+                android:id="@+id/pwdsignup"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword">
+
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Confirm Password:"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <EditText android:textColor="@android:color/black"
+
+                android:textSize="15dp"
+                android:id="@+id/cnfpwdsignup"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Date of Birth:"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+
+            <EditText android:textColor="@android:color/black"
+
+                android:textSize="15dp"
+                android:id="@+id/dobsignup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="date" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Contact Number:"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <EditText android:textColor="@android:color/black"
+
+                android:textSize="15dp"
+                android:id="@+id/contactsignup"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="phone"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Gender:"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:layout_weight="1"
+                android:id="@+id/gendersignup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v7.widget.AppCompatSpinner>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+
+                android:layout_weight="1"
+                android:text="Blood Group:"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <Spinner
+                android:id="@+id/bloodgrp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+
+                android:layout_weight="1"
+                android:text="Address:"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <EditText android:textColor="@android:color/black"
+
+                android:id="@+id/address1"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+
+                android:layout_weight="1"
+                android:text="Kit Allocated:"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:weightSum="3"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></LinearLayout>
+
+                <Switch
+                    android:id="@+id/kitallocswitch"
+                    android:textOff="NO"
+                    android:textOn="YES"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <EditText android:textColor="@android:color/black"
+
+                android:id="@+id/dateofalloc"
+                android:layout_weight="1"
+                android:text="Date:"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <EditText android:textColor="@android:color/black"
+
+                android:text="time"
+                android:id="@+id/timeofalloc"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+
+                android:layout_weight="1"
+                android:text="Doc Allocated:"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:weightSum="3"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></LinearLayout>
+
+                <Switch
+                    android:id="@+id/docallocswitch"
+                    android:textOff="NO"
+                    android:textOn="YES"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="S_Key:"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <EditText android:textColor="@android:color/black"
+                android:textSize="15dp"
+                android:id="@+id/skey"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="date" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></LinearLayout>
+            <Button
+                android:id="@+id/submit"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:text="Submit"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
